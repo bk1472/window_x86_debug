@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dbgtool_lib", "dbgtool_lib\dbgtool_lib.vcxproj", "{DCB31390-374E-4EE9-B75F-A962BA8FAF22}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stackdump", "stackdump\stackdump.vcxproj", "{D30F2242-3D76-4A3A-9E1A-5AC59ACEE4CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCB31390-374E-4EE9-B75F-A962BA8FAF22}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DCB31390-374E-4EE9-B75F-A962BA8FAF22}.Debug|Win32.Build.0 = Debug|Win32
+		{DCB31390-374E-4EE9-B75F-A962BA8FAF22}.Release|Win32.ActiveCfg = Release|Win32
+		{DCB31390-374E-4EE9-B75F-A962BA8FAF22}.Release|Win32.Build.0 = Release|Win32
+		{D30F2242-3D76-4A3A-9E1A-5AC59ACEE4CB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D30F2242-3D76-4A3A-9E1A-5AC59ACEE4CB}.Debug|Win32.Build.0 = Debug|Win32
+		{D30F2242-3D76-4A3A-9E1A-5AC59ACEE4CB}.Release|Win32.ActiveCfg = Release|Win32
+		{D30F2242-3D76-4A3A-9E1A-5AC59ACEE4CB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
