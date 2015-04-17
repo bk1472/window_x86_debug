@@ -5219,7 +5219,7 @@ FoundEntry:
 						 case 32: addr = pDsmOp->baseAddr + pDsmOp->pc + op->lval.sdword; break;
 						 default: break;
 						 }
-						#ifdef _DEBUG
+						#if 1//def _DEBUG
 						 if (0 != dbgtool::findSymByAddr((UINT32)addr, &sym))
 						 {
 							 mkasm(pDsmOp, "0x" FMT64 "x (=%s)", addr, sym);
@@ -5451,7 +5451,7 @@ FoundEntry:
 						 case 32: addr = pDsmOp->baseAddr + pDsmOp->pc + op->lval.sdword; break;
 						 default: break;
 						 }
-						#ifdef _DEBUG
+						#if 1//def _DEBUG
 						 if (0 != dbgtool::findSymByAddr((UINT32)addr, &sym))
 						 {
 							 mkasm(pDsmOp, "0x" FMT64 "x (=%s)", addr, sym);

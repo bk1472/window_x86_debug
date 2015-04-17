@@ -34,6 +34,11 @@ void my_first_call()
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	if (DBGTOOL::dbgtool::checkPdbFile() == -1)
+	{
+		printf("[PDB File can not open!]\n");
+	}
+
 	DBGTOOL::dbgtool::regExcepHandler();
 
 	my_first_call();

@@ -79,7 +79,6 @@ namespace DBGTOOL
 		}
 
 		dbgtool::hexdump("\n      == Exception Stack ==", (void *)pRegs[X86REG_ESP], 4, 0x100);
-
 		dbgtool::xprintf("      ==== Exception Code Disassembly ====");
 		dbgtool::printExcCode((UINT32)pRegs[X86REG_EIP], 0x20);
 		dbgtool::xprintf("      ==== Exception Stack backtrace ====\n");

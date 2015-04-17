@@ -22,14 +22,20 @@ namespace DBGTOOL {
 		UINT64 esp;
 	};
 	class dbgtool {
+	private:
+					static int		pdbOpen;
 	public:
 		            static int		getExcStat			(void);
 		            static void		log_exc_file		(void);
+					static void		setPdbInfo			(int value) { pdbOpen = value; }
+					static int		getPdbInfo			(void)      { return pdbOpen;}
 		DBGTOOL_API static int		stack_trace			(CONTEXT *context, frames *frame_ptrs, size_t count);
 		DBGTOOL_API static void		printStack			(void);
 		DBGTOOL_API	static void		printExcStack		(frames frame_ptr[], int count);
 		DBGTOOL_API static void		hexdump				(const char *name, void *vcp, int width, int size);
 		DBGTOOL_API static void		printExcCode		(UINT32 eip, int win_sz);
+		DBGTOOL_API static int		checkPdbFile		(void);
+
 		DBGTOOL_API static UINT32	findSymByAddr		(UINT32 addr, char **pSymName);
 		DBGTOOL_API static int		dsmInst				(register UINT32* binInst, UINT32 address, void* prtAddress);
 		DBGTOOL_API static int		regPrintDsmMode		(UINT32 print_func);
